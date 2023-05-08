@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions in javascript</title>
+</head>
+<body>
+    <div class="container">This is container</div>
+
+    <script>
+        // console.log('This is a console');
+
+        // function greet(){
+        //     console.log('Hare Krishna!');
+        // }
+        // greet();
+
+        // Arrow function
+     let greet =  ()=> {
+         console.log('Hare Krsna!');
+     }
+
+    //  his function can also be used with the setTimeout() function as follows-
+
+    // setTimeout(() => {
+    //     console.log("Govina!");
+    // }, 3000);
+
+     greet();
+
+    //  More SHortcuts
+    // let sum =(a,b)=>a+b;
+    // let half = a =>a/2;
+
+    //Now let us see the use of lexical this 
+
+    let obj1 ={
+        greeting :"Sabse Sona ",
+        names :["Krishna","DevkiNandan","Govinda","MadanMohan"],
+        speak(){
+            this.names.forEach(friend => {
+                console.log( this.greeting+ " Mera "+ friend);
+            });
+        }
+    }
+    obj1.speak();
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert , prompt and confirm</title>
+</head>
+<body>
+    <div class="con">THis is the practice tutorial for interaticiin finctions </div>
+    
+    <script>
+        // alert in in-browser javascript -does not return anything!
+        // alert("THis is an alert message");
+
+        // When we want to give any question to user ,we make use of prompt
+        // let name = prompt("What is your name? ","guest");
+        // console.log(name);
+
+
+        // To confrim somthing -->confirm in js
+        // let deletePost = confirm("Do you really want to delete this post?");
+        // if(deletePost){
+        //     // Here will be the code to delete the post.
+        //     console.log("Your post has been deleted!");
+        // }
+        // else{
+        //     // Here will be the code to cancel deletion.
+        //     console.log("Your post has not been .deleted!")
+        // }
+        // console.log(deletePost);
+
+        let age = prompt("What is your age?");
+        if (age>18){
+            console.log("You can cast vote.");
+        }
+        else{
+            console.log("You are a minor so you can not cast vote.")
+        }
+    </script>
+    
+</body>
+</html>

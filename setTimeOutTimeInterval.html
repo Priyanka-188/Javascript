@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set  timout and set time interval</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a Clock here --</h1>
+        <span id="time"></span>
+
+    </div>
+    <script>
+        console.log("This is console");
+
+    // function greet(name){
+    //     console.log("Hello ,Will ypu be always there for me  "+name )
+    // }
+    // timeoutId= setTimeout(greet, 5000,'Krishna');
+    // clearTimeout(timeoutId);
+    // function reply(name){
+    //     console.log("O my bacchi..I am always with you everytime,every moment in every difficulty ,in every phase .Mujse prem karti raho meri bacchi aur m sb kast tumhare har lunga , whatever activity  you do ..do it for me surrender that unot me and i will be the happiest. ");
+    // }
+    // setTimeout(reply, 10000);
+
+    // Set time interval
+
+    // function message(){
+    //     console.log("Hare Krishna!")
+    // }
+    // intervalId= setInterval(message, 2000);
+    // clearInterval(intervalId);
+
+    function displayTime()
+    {
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML =time;
+    }
+    setInterval(displayTime,1000);
+
+
+
+    
+
+    </script>
+</body>
+</html>

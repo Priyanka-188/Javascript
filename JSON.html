@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Notation</title>
+</head>
+<body>
+    <script>
+        // <!-- let us initialize the JSON object and see what the output comes in the console? -->
+
+        let jsonobj = {
+            name: "Krsna",
+            nickname:'Kanha',
+            friend:'Sudama',
+            favFood: 'Makhan'
+        }
+        console.log(jsonobj);
+
+        let myjsonstr = JSON.stringify(jsonobj);
+        console.log(myjsonstr)
+
+        myjsonstr = myjsonstr.replace("Kanha","Kanhiya");
+        console.log(myjsonstr);
+
+        newJsonObj = JSON.parse(myjsonstr);
+        console.log(newJsonObj);
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALl types of loops.</title>
+</head>
+<body>
+    <div class="container">This tutorial is for loops</div>
+    <script>
+        console.log("This is loops tutorial!")
+        // let i=0;
+        // for(i=0;i<5;i++)
+        // {
+        //     console.log(i);
+        // }
+        let friends = ["Krisna","Her maintainer","Priyanka"," To be web devoloper"];
+        // for (let index = 0; index < friends.length; index++) {
+        //     console.log( "Meet my friend " +friends[index]);
+        // }
+
+
+        // friends.forEach(element => {
+        //     console.log(element);
+        // });
+        // for (const element of friends) {
+        //     console.log("hello friend "+element +" It's I");
+        // }
+
+        //To iterate through an object, we can use for/in loops. Let us understand with the example below
+        let employee={
+            name: "Priyanka",
+            skil:"WEb Development",
+            Friend:"Krishna"
+        }
+        for ( key in employee) { 
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+    </script>
+</body>
+</html>
