@@ -39,4 +39,4 @@ newTeacher.logIn();         //Username is Hitesh
 
 console.log(newTeacher instanceof Teacher);        //true
 
-console.log(newTeacher instanceof User); 
+console.log(newTeacher instanceof User);      //true
