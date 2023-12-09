@@ -33,4 +33,4 @@ var num = -5;
 function negativeInfinity(){
     console.log(num/0);
 }
-negativeInfinity();
+negativeInfinity();  //-Infinity
