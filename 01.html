@@ -8,6 +8,7 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>Radha</h1>
     <form name="myform" action="index.php">
         Search: <input type="text" name="query">
         <a href="submitform()">Submit</a>
@@ -17,6 +18,11 @@
         function submitform(){
             document.myform.submit();
         }
+        const h = document.getElementsByTagName("h1");
+
+        document.body.bgColor = "yellow";
+        h.style.bgColor = "yellow";
+        
     </script>
 
   </body>
