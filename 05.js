@@ -3,12 +3,7 @@
 let arr = ["Kanha","Kanha","Kanha","Radha","Radha","Priya","Ladli",1,3,1,3];
 
 const removeDuplicates = (arr)=>{
-    let set = new Set();
-    
-    for(const element of arr){
-        set.add(element);
-    }
-    arr = Array.from(set);
+    arr = [...new Set(arr)];    
     
     return arr;
 }
